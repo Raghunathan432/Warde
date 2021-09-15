@@ -61,15 +61,23 @@ body {
 .form-text-input {
 	height: 40px;
 	border: none;
-	box-shadow: 3px 3px 3px 3px #f4f4f4;
+	box-shadow: 3px 3px 3px 3px #c6c6c6;
+	background: #f4f4f4;
 	width: 100%;
 	outline: none !important;
+	transition : all 0.2s;
+}
+.form-text-input:focus {
+	box-shadow: none;
+	border-bottom: 3px solid #0080ff;
 }
 #submit-btn {
-	border-radius: 0;
-	-webkit-clip-path: polygon(18% 0, 100% 0%, 81% 100%, 0% 100%);
-	clip-path: polygon(18% 0, 100% 0%, 81% 100%, 0% 100%);
+	border-radius: 0;	
 	padding: 5px 20px;
+	transition: all 0.5s;
+}
+#submit-btn:hover {
+	transform: skewX(-15deg);
 }
 #signup-using {
 	margin: 20px auto;
@@ -85,6 +93,7 @@ body {
 }
 #signup-heading {
 	font-family: 'Open Sans Condensed', sans-serif;
+	color: #0080ff;
 }
 
 @media screen and (max-width: 976px) {
